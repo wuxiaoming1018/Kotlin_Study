@@ -21,6 +21,7 @@ fun main(args: Array<String>) {
     testNull()
     println("-------------------------------")
     testFor()
+    test()
 }
 
 fun max(x: Int, y: Int) = if (x > y) {
@@ -57,4 +58,17 @@ fun testFor(){
     println("\n-------使用until排除---------")
     for (i in 1 until 9) print(i)
     println("\n----------------")
+}
+
+fun test(){
+    val a :Int=11
+    println(a==a)
+    val boxedA:Int?=a
+    val anotherBoxedA:Int?=a
+    println(boxedA===anotherBoxedA)
+    val aa:Int=10
+    println(aa==aa)
+    val boxedAa:Int?=aa
+    val anotherBoxedAa:Int?=aa
+    println(boxedAa===anotherBoxedAa)
 }
